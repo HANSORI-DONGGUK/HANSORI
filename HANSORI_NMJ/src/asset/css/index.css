@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: "NamsanM";
+  src: url("../css/SeoulNamsanM.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "NamsanM";
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Menu:hover {
+  color: #ef0000;
+  font-weight: bolder;
+}
+
+.Menu img:hover {
+  filter: brightness(80%);
+}
+
+.wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  border-radius: 100%;
+}
+
+.Footer {
+  height: 50px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.Footer .wrap {
+  justify-content: center;
+}
+
+.Footer .left {
+}
+
+.Footer .right {
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.gallery_background {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: black;
+}
+
+.gallery {
+  color: red;
+}
+
+.wrap1 {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.ReactGridGallery {
+  display: inline-block;
+  width: 100%;
+}
+
+.dots {
+  height: 10px;
+  padding: 10px 0;
+  filter: brightness(90%);
+}
+
+.intro_title {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  color: white;
+}
+
+.intro_contents {
+  padding-top: 30px;
+  font-size: 1vw;
+  text-align: center;
+  color: white;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.gallery_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  z-index: 1;
+  background-color: black;
+}
+
+.cJUrrB {
+  overflow: hidden;
+}
+
+.iOlHZw {
+  overflow: hidden;
+}
+
+.iOlHZw:hover {
+  border: 0.15px solid rgb(0, 0, 0);
+}
+
+.cJUrrB:hover {
+  filter: brightness(80%);
+}
+
+.plus {
+  font-size: 30px;
+  color: #ef0000;
+
+  position: fixed;
+  padding-top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.plus:hover {
+  cursor: pointer;
+  font-size: 33px;
+  transition: all 0.1s;
+}
+
+.fadein {
+  position: relative;
+  animation: fadein 0.5s linear;
+}
+
+.fadeout {
+  position: relative;
+  animation: fadeout 0.5s linear;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.styled_header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.styled_logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styled_menu {
+  width: 60%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+.styled_profile {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --fc-small-font-size: 0.85em;
+  --fc-page-bg-color: #fff;
+  --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
+  --fc-neutral-text-color: #808080;
+  --fc-border-color: #ddd;
+
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #2c3e50;
+  --fc-button-border-color: #2c3e50;
+  --fc-button-hover-bg-color: #1e2b37;
+  --fc-button-hover-border-color: #1a252f;
+  --fc-button-active-bg-color: #1a252f;
+  --fc-button-active-border-color: #151e27;
+
+  --fc-event-bg-color: #ef0000;
+  --fc-event-border-color: #ef0000;
+  --fc-event-text-color: #fff;
+  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+
+  --fc-more-link-bg-color: #d0d0d0;
+  --fc-more-link-text-color: inherit;
+
+  --fc-event-resizer-thickness: 8px;
+  --fc-event-resizer-dot-total-width: 8px;
+  --fc-event-resizer-dot-border-width: 1px;
+
+  --fc-non-business-color: rgba(215, 215, 215, 0.3);
+  --fc-bg-event-color: rgb(143, 223, 130);
+  --fc-bg-event-opacity: 0.3;
+  --fc-highlight-color: rgba(188, 232, 241, 0.3);
+  --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+  --fc-now-indicator-color: red;
+}
+
+.bt {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.bt:hover {
+  filter: brightness(80%);
+}
