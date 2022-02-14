@@ -22,7 +22,7 @@ const Header = ({ location, match, history }) => {
           </div>
           <div className="styled_menu">
             <NavLink className="Menu" to="/about">
-              동아리소개
+              동아리
             </NavLink>
             <NavLink className="Menu" to="/gallery">
               갤러리
@@ -33,12 +33,12 @@ const Header = ({ location, match, history }) => {
             <NavLink className="Menu" to="/pungmul">
               풍물
             </NavLink>
-            <NavLink className="Menu" to="/pungsa">
+            {/* <NavLink className="Menu" to="/pungsa">
               풍사
-            </NavLink>
-            <NavLink className="Menu" to="/jokbo">
+            </NavLink> */}
+            {/* <NavLink className="Menu" to="/jokbo">
               족보
-            </NavLink>
+            </NavLink> */}
           </div>
           <div className="styled_profile">
             <NavLink className="Menu" to="/profile">

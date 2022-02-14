@@ -13,7 +13,6 @@ class Profile extends Component {
 
   // Google Login
   responseGoogle = (res) => {
-    console.log(res);
     this.setState({
       id: res.googleId,
       name: res.profileObj.name,
@@ -21,12 +20,8 @@ class Profile extends Component {
     });
 
     window.localStorage.setItem("imageUrl", this.state.imageUrl);
-    window.location.reload();
-
-    this.setState({
-      logged: true,
-    });
-    console.log("로그인");
+    console.log(res);
+    // window.location.reload();
   };
 
   // Login Fail
