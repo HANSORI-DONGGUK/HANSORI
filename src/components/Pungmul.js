@@ -15,6 +15,14 @@ function getRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
 
+let numbers = [0, 1, 2, 3, 4];
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+shuffle(numbers);
+
+const _inst = [inst1, inst2, inst3, inst4, inst5];
+
 const Test = styled.button`
   background-color: ${getRandomColor};
   position: absolute;
@@ -43,7 +51,7 @@ function Pungmul() {
             <DelayLink delay={300} to="/pungmul/kkwaenggwari">
               <img
                 className="inst"
-                src={inst1}
+                src={_inst[numbers[0]]}
                 alt=""
                 style={{ width: "46px", filter: "invert(100%)" }}
                 onClick={() => {
@@ -57,7 +65,7 @@ function Pungmul() {
             <DelayLink delay={300} to="/pungmul/janggu">
               <img
                 className="inst"
-                src={inst2}
+                src={_inst[numbers[1]]}
                 alt=""
                 style={{ width: "112px", filter: "invert(100%)" }}
               />
@@ -68,7 +76,7 @@ function Pungmul() {
             <DelayLink delay={300} to="/pungmul/drum">
               <img
                 className="inst"
-                src={inst3}
+                src={_inst[numbers[2]]}
                 alt=""
                 style={{ width: "86px", filter: "invert(100%)" }}
               />
@@ -79,7 +87,7 @@ function Pungmul() {
             <DelayLink delay={300} to="/pungmul/jing">
               <img
                 className="inst"
-                src={inst4}
+                src={_inst[numbers[3]]}
                 alt=""
                 style={{ width: "96px", filter: "invert(100%)" }}
               />
@@ -90,7 +98,7 @@ function Pungmul() {
             <DelayLink delay={300} to="/pungmul/sogo">
               <img
                 className="inst"
-                src={inst5}
+                src={_inst[numbers[4]]}
                 alt=""
                 style={{ width: "64px", filter: "invert(100%)" }}
               />
